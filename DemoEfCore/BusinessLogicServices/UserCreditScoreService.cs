@@ -2,10 +2,10 @@
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using EntityFramework.Demo.DatabaseContext;
+using DemoEfCore.DatabaseContext;
 using EntityFrameworkCore.DbContextScope.Interfaces;
 
-namespace EntityFramework.Demo.BusinessLogicServices
+namespace DemoEfCore.BusinessLogicServices
 {
     public class UserCreditScoreService
     {

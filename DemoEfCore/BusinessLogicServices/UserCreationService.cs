@@ -1,10 +1,10 @@
 ﻿using System;
-using EntityFramework.Demo.CommandModel;
-using EntityFramework.Demo.DomainModel;
-using EntityFramework.Demo.Repositories;
+using DemoEfCore.CommandModel;
+using DemoEfCore.DomainModel;
+using DemoEfCore.Repositories;
 using EntityFrameworkCore.DbContextScope.Interfaces;
 
-namespace EntityFramework.Demo.BusinessLogicServices
+namespace DemoEfCore.BusinessLogicServices
 {
     /*
 	 * Example business logic service implementing command functionalities (i.e. create / update actions).

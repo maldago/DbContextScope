@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Threading.Tasks;
-using EntityFramework.Demo.DomainModel;
+using DemoEfCore.DomainModel;
 
-namespace EntityFramework.Demo.Repositories
+namespace DemoEfCore.Repositories
 {
     public interface IUserRepository
     {
         User Get(Guid userId);
-        Task<User> GetAsync(Guid userId);
+        ValueTask<User> GetAsync(Guid userId);
         void Add(User user);
     }
 }

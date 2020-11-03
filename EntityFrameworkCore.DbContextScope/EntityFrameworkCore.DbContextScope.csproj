@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFrameworks>net472;netstandard2.1</TargetFrameworks>
+		<AssemblyName>EntityFrameworkCore.DbContextScope</AssemblyName>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<RootNamespace>EntityFrameworkCore.DbContextScope</RootNamespace>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard2.1'">
+		<DefineConstants>NETSTANDARD;NETSTANDARD2_1;NETCORE </DefineConstants>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(TargetFramework)' == 'net472'">
+		<DefineConstants>NET472;NETFULL</DefineConstants>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="EntityFramework" Version="6.4.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.9" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.9" />
+		<PackageReference Include="System.Threading" Version="4.3.0" />
+	</ItemGroup>
+</Project>

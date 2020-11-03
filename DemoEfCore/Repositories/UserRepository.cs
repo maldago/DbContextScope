@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Threading.Tasks;
+using DemoEfCore.DatabaseContext;
+using DemoEfCore.DomainModel;
 using EntityFrameworkCore.DbContextScope.Interfaces;
-using EntityFramework.Demo.DatabaseContext;
-using EntityFramework.Demo.DomainModel;
 
-namespace EntityFramework.Demo.Repositories
+namespace DemoEfCore.Repositories
 {
     /*
 	 * An example "repository" relying on an ambient DbContext instance.
@@ -50,7 +50,7 @@ namespace EntityFramework.Demo.Repositories
             return DbContext.Users.Find(userId);
         }
 
-        public Task<User> GetAsync(Guid userId)
+        public ValueTask<User> GetAsync(Guid userId)
         {
             return DbContext.Users.FindAsync(userId);
         }

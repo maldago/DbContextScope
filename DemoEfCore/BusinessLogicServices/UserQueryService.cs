@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
-using EntityFramework.Demo.DatabaseContext;
-using EntityFramework.Demo.DomainModel;
-using EntityFramework.Demo.Repositories;
+using DemoEfCore.DatabaseContext;
+using DemoEfCore.DomainModel;
+using DemoEfCore.Repositories;
 using EntityFrameworkCore.DbContextScope.Interfaces;
 
-namespace EntityFramework.Demo.BusinessLogicServices
+namespace DemoEfCore.BusinessLogicServices
 {
     /*
 	 * Example business logic service implementing query functionalities (i.e. read actions).

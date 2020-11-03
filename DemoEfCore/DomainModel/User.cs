@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EntityFramework.Demo.DomainModel
+namespace DemoEfCore.DomainModel
 {
     // Anemic model to keep this demo application simple.
     public class User

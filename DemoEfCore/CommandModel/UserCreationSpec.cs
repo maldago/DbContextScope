@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EntityFramework.Demo.CommandModel
+namespace DemoEfCore.CommandModel
 {
     /// <summary>
     /// Specifications of the CreateUser command. Defines the properties of a new user.

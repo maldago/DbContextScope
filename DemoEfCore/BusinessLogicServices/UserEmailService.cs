@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using EntityFramework.Demo.DatabaseContext;
-using EntityFramework.Demo.DomainModel;
+using DemoEfCore.DatabaseContext;
+using DemoEfCore.DomainModel;
 using EntityFrameworkCore.DbContextScope.Enums;
 using EntityFrameworkCore.DbContextScope.Interfaces;
 
-namespace EntityFramework.Demo.BusinessLogicServices
+namespace DemoEfCore.BusinessLogicServices
 {
     public class UserEmailService
     {

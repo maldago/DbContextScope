@@ -1,17 +1,19 @@
-﻿using System;
-using System.Linq;
-using EntityFramework.Demo.BusinessLogicServices;
-using EntityFramework.Demo.CommandModel;
-using EntityFramework.Demo.DatabaseContext;
-using EntityFramework.Demo.Repositories;
+﻿using DemoEfCore.BusinessLogicServices;
+using DemoEfCore.CommandModel;
+using DemoEfCore.DatabaseContext;
+using DemoEfCore.Repositories;
 using EntityFrameworkCore.DbContextScope.Implementations;
+using Microsoft.Extensions.Configuration;
+using System;
+using System.IO;
+using System.Linq;
 
-namespace Numero3.EntityFramework.Demo
+namespace DemoEfCore
 {
     class Program
-	{
-		static void Main(string[] args)
-		{
+    {
+        static void Main(string[] args)
+        {
 			//-- Poor-man DI - build our dependencies by hand for this demo
 			var dbContextScopeFactory = new DbContextScopeFactory();
 			var ambientDbContextLocator = new AmbientDbContextLocator();
@@ -140,5 +142,5 @@ namespace Numero3.EntityFramework.Demo
 			Console.WriteLine("Press enter to exit...");
 			Console.ReadLine();
 		}
-	}
+    }
 }
